@@ -43,6 +43,6 @@ app.post("/posts", function (request, response) {
   response.redirect("/posts");
 });
 
-app.listen("8000", function () {
+app.listen("80", function () {
   console.log("listening at http://localhost:8000");
 });
