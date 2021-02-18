@@ -43,6 +43,6 @@ app.post("/posts", function (request, response) {
   response.redirect("/posts");
 });
 
-app.listen("80", function () {
-  console.log("listening at http://localhost:8000");
+app.listen(process.env.PORT ?? "8000", function () {
+  console.log("listening at " + process.env.PORT ?? "8000");
 });
